@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+    <head>  
+        <!-- <meta http-equiv="refresh" content="1"> -->
+        <style>
+            body{
+                font-family: 'Cairo', 'Segoe UI', system-ui, sans-serif;
+                background-color: rgb(255, 248, 234);
+                margin: 0px;
+            }
+            .card{
+                background-color: white;
+                margin: auto;
+                width: 95%;
+                /* padding: 20px; */
+                border-radius: 30px;
+                box-shadow: 30px 30px 50px rgba(0,0,0,0.1);
+            }
+            .title{
+                margin: 0px;
+                /* text-align: center; */
+                
+                color: #d0684e;
+                border-bottom: #d0684e 4px solid;
+                font-size: 24px;
+            }
+            .title h3{
+                padding: 20px 0px 0px 20px;
+                margin-bottom: 0px;
+            }
+            .description{
+                padding: 20px;
+                color: #333;
+                background-color: antiquewhite;
+                margin: 20px 0px 20px 0px;
+                border-radius: 25px;
+                border-right: 5px solid #d0684e;
+
+                
+            }
+            .content{
+                padding: 20px;
+            }
+            .header{
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .profile{
+                display: flex;
+                /* grid-template-columns: repeat(2, 1fr); */
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 25px;
+                background-color: white;
+                box-shadow: 30px 30px 50px rgba(0,0,0,0.1);
+                border-right: 5px solid #d0684e;
+                border-left: 5px solid #d0684e;
+
+            }
+            .profile img{
+                width: 200px;
+                border-radius: 50px;
+                box-shadow: 10px 10px 50px rgba(0,0,0,0.1);
+
+            }
+            .profile img:hover{
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+            .profile .data h3{
+                margin: 0px;
+                color: #d0684e;
+                font-size: 34px;
+            }
+             .email, .phone{
+                background-color: #eee;
+                padding: 10px;
+                margin-top: 10px;
+                justify-content: space-between;
+                border-radius: 50px;
+                font-size: 18px;
+                font-style: italic;
+                color: #757575;
+            }
+            .profile .data .name{
+                margin: 0px;
+                color: #333;
+                font-size: 20px;
+            }
+            .skills{
+                display: flex;
+                gap: 20px;
+                padding: 20px;
+            }
+            .card img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .card:hover{
+                transform: translateY(-5px);
+                transition: 0.3s;
+            }
+            .card h3{
+                color: #d0684e;
+                margin: 20px ;
+                text-align: center;
+            }
+                .title-skills{
+                    color: #d0684e;
+                    border-bottom: #d0684e 4px solid;
+                    font-size: 24px;
+                    margin: 20px;
+                    text-align: center;
+                }
+            .skills{
+                background: linear-gradient(to right,antiquewhite ,#ff7e5f );
+                /* background-color:antiquewhite; */
+                margin: 20px;
+                border-radius: 25px;
+            }
+            .skills .card{
+                flex: 1;
+                max-width: 200px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 25px;
+                box-shadow: 30px 30px 50px rgba(0,0,0,0.1);
+                border-right: 5px solid #d0684e;
+                border-left: 5px solid #d0684e;
+            }
+            .conect-info{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 15px;
+                
+            }
+           
+        </style>
+
+    </head>
+
+  <body>
+
+    <header class="header">
+        <h1>Ali Dagnosh</h1>
+        <p>مطور مواقع | Web Developer</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Profile -->
+        <div class="profile">
+            <img src="profile-img.jpg" alt="Profile Image">
+            <div class="data">
+                <h3>Ali Dagnosh</h3>
+                <p class="name">مطور مواقع متخصص في تصميم وتطوير واجهات المستخدم باستخدام HTML و CSS و JavaScript.</p>
+                
+                <div class="conect-info">
+                    <p class="email">ali@gmail.com</p>
+                    <p class="phone">+123456789</p>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- About / Info -->
+        <div class="card">
+            <div class="title">
+                <h3>نبذة عني</h3>
+            </div>
+            <div class="content">
+                <p class="description">
+                    أنا مطور مواقع شغوف بإنشاء تصاميم عصرية وتجارب مستخدم مميزة.
+                </p>
+                <p>✔️ خبرة في بناء واجهات متجاوبة (Responsive Design).</p>
+                <p>✔️ القدرة على تحويل التصاميم إلى مواقع حقيقية.</p>
+                <p>✔️ العمل على مشاريع أنظمة مبيعات وتطبيقات ويب متكاملة.</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <h2 class="title-skills">مهاراتي</h2>
+
+        <div class="skills">
+
+            <div class="card">
+                <img src="profile-img.jpg" alt="">
+                <h3>HTML</h3>
+                <p>بناء هيكل صفحات الويب بشكل احترافي</p>
+            </div>
+
+            <div class="card">
+                <img src="profile-img.jpg" alt="">
+                <h3>CSS</h3>
+                <p>تصميم واجهات حديثة باستخدام Flexbox و Grid</p>
+            </div>
+
+            <div class="card">
+                <img src="profile-img.jpg" alt="">
+                <h3>JavaScript</h3>
+                <p>إضافة التفاعل والحركة للمواقع</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
